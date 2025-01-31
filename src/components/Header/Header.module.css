@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: var(--background);
+  color: #ffffff;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+.list li {
+  margin: 0;
+  font-size: 1.5rem;
+  /* Tamanho maior */
+}
