@@ -6,23 +6,38 @@ import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
-    const [dropBarra1, setdropBarra1] = useState(false);    
+    const [listOpen, setListOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+    const openList = () => {
+        setListOpen(!listOpen);
     };
 
     return (
         <header className={styles.header}>
-            <div className={styles.navContainer}>
-            </div>
             <nav>
                 <ul className={styles.list}>
                     <li>
-                        <Link href='/'>Inicio</Link>
+                        <Link href='/'>Home</Link>
                     </li>
                     <li>
-                        <Link href='/'>Medico </Link>
+                        <Link onMouseOver={openList} href='/'>Medico </Link>
+                        <ul>
+                            <li>
+                                <Link href='/'>Listar </Link>
+                            </li>
+                            <li>
+                                <Link href='/'>Listar2 </Link>
+                            </li>
+                            <li>
+                                <Link href='/'>Listar3 </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <Link href='/'>Pacientes </Link>
+                    </li>
+                    <li>
+                        <Link href='/'>Agendamento </Link>
                     </li>
                 </ul>
             </nav>
