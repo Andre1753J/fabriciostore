@@ -6,7 +6,7 @@ import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
-    const [listOpen, setListOpen] = useState(false);
+    const [listOpen, setListOpen] = useState(true);
 
     const openList = () => {
         setListOpen(!listOpen);
@@ -19,25 +19,35 @@ export default function Header() {
                     <li>
                         <Link href='/'>Home</Link>
                     </li>
-                    <li>
-                        <Link onMouseOver={openList} href='/'>Medico </Link>
-                        <ul>
-                            <li>
+                    <li className={styles.lista} onClick={openList}>
+                        <Link href='#'>Medico </Link>
+                        <ul className={`${styles.subLista} ${openList ? styles.litOpen : ''}`}>
+                            <li className={styles.subLista}>
                                 <Link href='/'>Listar </Link>
                             </li>
-                            <li>
+                            <li className={styles.subLista}>
                                 <Link href='/'>Listar2 </Link>
                             </li>
-                            <li>
+                            <li className={styles.subLista}>
                                 <Link href='/'>Listar3 </Link>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <Link href='/'>Pacientes </Link>
+                        <ul>
+                            <li>
+                                <Link href='/'>Listar</Link>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
+                    <li> {/*className={styles.list} */}
                         <Link href='/'>Agendamento </Link>
+                        <ul>
+                            <li className={styles.subList}>
+                                <Link href='/'>Listar</Link>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>

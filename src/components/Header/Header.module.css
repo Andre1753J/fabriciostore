@@ -7,34 +7,33 @@
   color: #000000;
 }
 
-.navContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav {
-  display: none;
+.lista {
   flex-direction: column;
   align-items: center;
   transition: max-height 0.3s ease-in-out;
-  overflow: hidden;
+}
+
+.subLista {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .list {
   display: flex;
   list-style: none;
-  flex-direction: row;
   gap: 20px;
   padding: 0;
 }
 
-.list li {
-  margin: 10px 0;
+.litOpen {
+  display: flex;
 }
 
 .list li {
+  margin: 10px 0;
   margin: 0;
   font-size: 1.5rem;
   /* Tamanho maior */
