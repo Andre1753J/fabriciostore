@@ -9,10 +9,36 @@ export default function Header() {
     const [listOpen, setListOpen] = useState(true);
     const [listOpen2, setListOpen2] = useState(true);
     const [listOpen3, setListOpen3] = useState(true);
+    
+    // const [numTest, setNumTest] = useState(0);
+
+    // const testeNum = () => {
+    //     setNumTest(numTest = 1);
+    // }
+
+    // switch (numTest) {
+    //     case numTest == 1:
+    //         setListOpen(!listOpen);
+    //         console.log(listOpen);
+    //         break;
+
+    //     case numTest == 2:
+    //         setListOpen2(!listOpen2);
+    //         console.log(listOpen2);
+    //         break;
+
+    //     case numTest == 3:
+    //         setListOpen3(!listOpen3);
+    //         console.log(listOpen3);
+    //         break;
+    //     default:
+    //         break;
+    // }
+
 
     const openList = () => {
         setListOpen(!listOpen);
-        console.log(listOpen)
+        console.log(listOpen);
     };
 
     const openList2 = () => {
@@ -36,7 +62,7 @@ export default function Header() {
                         <Link href='#'>Médicos</Link>
                         <ul className={`${styles.subLista} ${listOpen ? styles.litOpen : ''}`}>
                             <li className={styles.subLista}>
-                                <Link href='/'>Listar </Link>
+                                <Link href='/Medicos'>Listar </Link>
                             </li>
                         </ul>
                     </li>
@@ -44,7 +70,7 @@ export default function Header() {
                         <Link href='#'>Paciente</Link>
                         <ul className={`${styles.subLista} ${listOpen2 ? styles.litOpen : ''}`}>
                             <li className={styles.subLista}>
-                                <Link href='/'>Listar </Link>
+                                <Link href='/Paciente'>Listar </Link>
                             </li>
                         </ul>
                     </li>
@@ -52,7 +78,7 @@ export default function Header() {
                         <Link href='#'>Agendamento</Link>
                         <ul className={`${styles.subLista} ${listOpen3 ? styles.litOpen : ''}`}>
                             <li className={styles.subLista}>
-                                <Link href='/'>Listar</Link>
+                                <Link href='/Agendamento'>Listar</Link>
                             </li>
                         </ul>
                     </li>
