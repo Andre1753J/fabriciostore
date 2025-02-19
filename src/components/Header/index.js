@@ -38,17 +38,17 @@ export default function Header() {
 
     const openList = () => {
         setListOpen(!listOpen);
-        console.log(listOpen);
+        // console.log(listOpen);
     };
 
     const openList2 = () => {
         setListOpen2(!listOpen2);
-        console.log(listOpen2)
+        // console.log(listOpen2)
     };
 
     const openList3 = () => {
         setListOpen3(!listOpen3);
-        console.log(listOpen3)
+        // console.log(listOpen3)
     };
 
     return (
