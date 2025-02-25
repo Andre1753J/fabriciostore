@@ -75,10 +75,10 @@ export default function Header() {
                         </ul>
                     </li>
                     <li className={styles.lista} onClick={openList3}>
-                        <Link href='#'>Agendamento</Link>
+                        <Link href='#'>Consulta</Link>
                         <ul className={`${styles.subLista} ${listOpen3 ? styles.litOpen : ''}`}>
                             <li className={styles.subLista}>
-                                <Link href='/Agendamento'>Listar</Link>
+                                <Link href='/Consulta'>Listar</Link>
                             </li>
                         </ul>
                     </li>
