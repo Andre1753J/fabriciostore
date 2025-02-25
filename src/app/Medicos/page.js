@@ -32,11 +32,11 @@ export default function medicos() {
                 <table className={styles.medicosTabela}>
                     <thead>
                         <tr>
-                            <th>id</th>
-                            <th>nome</th>
-                            <th>telefone</th>
-                            <th>email</th>
-                            <th>especialidade</th>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Especialidade</th>
                         </tr>
                     </thead>
                     <tbody>
