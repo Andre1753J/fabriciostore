@@ -39,7 +39,7 @@ export default function Paciente() {
                             <th>CPF</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.rolagem}>
                         {paciente.map(info => (
                             <tr key={info.id}>
                                 <td>{info.id}</td>

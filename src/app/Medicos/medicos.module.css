@@ -40,6 +40,7 @@
 }
 
 .medicoCentralizado {
-    display: flex;
+    display: block;
+    overflow-x: auto;
     justify-content: center;
 }
